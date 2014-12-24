@@ -1,11 +1,12 @@
 <?php
 namespace AbstractClasses;
 require 'Interfaces.php';
- abstract class AbstractCrud  implements  \Interfaces\CrudInterface {
- abstract public function create();
- abstract  function read();
- abstract  function update();
- abstract   function delete();
+use Interfaces\CrudInterface;
+ abstract class AbstractCrud  implements  CrudInterface{
+  function create(){}
+  function read(){}
+  function update(){}
+  function delete(){}
 
 abstract public function bulkUpdate();
 abstract public   function bulkDelete();

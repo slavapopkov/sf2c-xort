@@ -1,8 +1,8 @@
 <?php
 namespace Classes;
 require 'AbstractClasses.php';
-
-class Crud extends \AbstractClasses\AbstractCrud  {
+use AbstractClasses\AbstractCrud;
+class Crud extends AbstractCrud  {
    public function create(){echo"create";}
    public function read(){echo "read";}
    public function update(){echo "update";}
