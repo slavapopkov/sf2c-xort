@@ -1,0 +1,3 @@
+services:
+    common.abstract:
+        class: magaz\CommonBundle\AbstractController

@@ -1,0 +1,3 @@
+services:
+    website.index:
+       class: magaz\WebsiteBundle\index

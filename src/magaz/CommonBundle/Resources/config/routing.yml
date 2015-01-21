@@ -1,0 +1,3 @@
+#absract_controler:
+#    path:     /
+#    defaults: { _controller: CommonBundle:Abstract:index}	
