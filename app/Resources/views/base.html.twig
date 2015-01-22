@@ -6,8 +6,76 @@
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
-    <body>
-        {% block body %}{% endblock %}
+	
+	
+	
+	
+	
+ <body style="height:100%" >
+<div style="border: 1px solid black;" >
+   <header >
+          <h1 align="center">Site</h1>
+		  
+    <h1>Н</h1>
+	
+
+   
+
+ </header>
+	 </div>	
+	 
+	 
+	 
+	 
+	 
+	 
+<div align="left" >
+	<h2>левый сайдбар</h2>
+        <div id="sidebar">
+            {% block sidebar %}
+                <ul>
+				     <li><a href ="{{ path('page_index') }}">home</a></li>
+                     <li><a href ="{{ path('Page_about') }}">about</a></li>
+                     <li><a href="{{ path('Page_contact') }}">Contact</a></li>
+                </ul>
+         {% endblock %}
+   </div>
+
+      
+   
+   
+<p><a href ="{{ path('Page_cart') }}">Корзина</a></p>  
+  <div >
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <div align="right" >
+ <H2>Корзина</H2>
+      {% block sidebarright %}{% endblock %}
+  </div>
+ 
+ 
+ 
+ 
+ 
+ 
+  <div align="center" style="margin:0 25%;" >  
+	  {% block body %}
+	  
+	  {% endblock %} 
+	    
+</div>
+	 
+  
+  
+  
+	
+<div style="background-color:#000ff0">{% block footer %}<H4 align="center">FOTER</H4>{% endblock %}</div>
+
         {% block javascripts %}{% endblock %}
     </body>
 </html>
