@@ -4,19 +4,3 @@ common:
 Website:
     resource: "@WebsiteBundle/Controller/"
     type:     annotation 
-#create static page
-Page_about:
-    path: /about
-    defaults:
-        _controller: FrameworkBundle:Template:template
-        template:    'WebsiteBundle:tamplate:about.html.twig'	
-Page_contact:
-    path: /contact
-    defaults:
-        _controller: FrameworkBundle:Template:template
-        template:    'WebsiteBundle:tamplate:contact.html.twig'
-Page_cart:
-    path: /cart
-    defaults:
-        _controller: FrameworkBundle:Template:template
-        template:    'WebsiteBundle:tamplate:cart.html .twig'			

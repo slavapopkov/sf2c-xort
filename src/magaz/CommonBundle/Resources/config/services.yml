@@ -1,3 +1,2 @@
-services:
-    common.abstract:
-        class: magaz\CommonBundle\AbstractController
+parameters:
+    common.abstract.class: CommonBundle\Controller\AbstractController
