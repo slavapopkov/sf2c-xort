@@ -1,6 +1,2 @@
-services:
-    website.index:
-       class: magaz\WebsiteBundle\index
-#services:
-#    website.static:
-#       class: magaz\WebsiteBundle\static	   
+parameters:
+       common.abstract.class: WesiteBundle\Controller\IndexController

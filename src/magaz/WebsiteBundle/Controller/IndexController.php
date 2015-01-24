@@ -11,11 +11,11 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
 
-class IndexController extends AbstractController
+class IndexController extends Controller
 {
 
 /**
- * @Route("/", name="page_index")
+ * @Route("/", name="Page_index")
  */
  
      public function indexAction()
