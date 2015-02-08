@@ -1,2 +1,7 @@
 parameters:
     common.abstract.class: CommonBundle\Controller\AbstractController
+
+Templating_manager:
+        class:    magaz\CommonBundle\Controller\AbstractController
+        calls:
+            - [setTemplating, ["@templating"]]

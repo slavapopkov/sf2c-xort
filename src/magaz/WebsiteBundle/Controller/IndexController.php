@@ -10,17 +10,29 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
+/**
+ * Class IndexController
+ * @package magaz\WebsiteBundle\Controller
+ */
 
-class IndexController extends Controller
+class IndexController extends AbstractController
 {
+
 
 /**
  * @Route("/", name="Page_index")
  */
- 
-     public function indexAction()
-    {
-       return $this->render('WebsiteBundle:tamplate:index.html.twig' );
-    } 
-	
+
+    /**
+     * @return string
+     */
+    public function  indexAction(){
+
+        return $this->responseAction( 'WebsiteBundle/tamplate/index.html.twig');
+
+    }
+
+
+
+
 }

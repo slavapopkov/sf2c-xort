@@ -2,12 +2,32 @@
 
 namespace magaz\CommonBundle\Controller;
 
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Bundle\FrameworkBundle\Templating\EngineInterface;
 
 /**
  * @Route(service="common.abstract.class")
  */
-
-class AbstractController 
+abstract  class AbstractController
 {
+    /** @var EngineInterface */
+    private $templating;
+
+    /**
+     * @param EngineInterface $templating
+     */
+    public function setTemplating(EngineInterface $templating)
+    {
+        $this->templating = $templating;
+    }
+
+    /**
+     * @param $view
+     * @return string
+     */
+    function responseAction($view )
+    {
+        return $this->templating->render($view);
+    }
+
+
 }

@@ -6,4 +6,4 @@ Website:
     type:     annotation 
 Website_routing:
     resource: "@WebsiteBundle/Resources/config/routing.yml"
-    type:     annotation
+    prefix:   /
